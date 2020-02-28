@@ -16,24 +16,24 @@ public class Room {
     int room_no;
     String room_type;
     double room_area;
-    int Ac_machines;
-    void setdata()
+    boolean Ac_machines;
+    protected void setdata()
     {
         Scanner sc=new Scanner(System.in);
-        System.out.println("Enter the room no,room type,roomarea and no.of ac machines");
+        System.out.println("Enter the room no,room type,roomarea and whether the room is ac or non ac");
         room_no=sc.nextInt();
         room_type=sc.next();
         room_area=sc.nextDouble();
-        Ac_machines=sc.nextInt();
+        Ac_machines=sc.nextBoolean();
         
     }
-    void displaydata()
+    protected void displaydata()
     {
         System.out.println("Room Details");
         System.out.println("Room No:"+room_no);
         System.out.println("Room Type="+room_type);
         System.out.println("Room Area="+room_area);
-        System.out.println("No.of AC machines:"+Ac_machines);
+        System.out.println("Ac Or Non Ac:"+Ac_machines);
     }
     public static void main(String args[])
     {
