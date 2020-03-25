@@ -21,7 +21,10 @@ public class Arithmetic implements Test{
     int x;
     public void square()
     {
-        x=10;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number");
+        
+        x=sc.nextInt();
         System.out.println("Square of "+x+"="+(x*x));
     }
 }

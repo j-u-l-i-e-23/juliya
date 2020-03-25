@@ -9,6 +9,7 @@ package LabUnit6;
  *
  * @author MCALAB01032
  */
+import java.util.*;
 
 interface A
 {
@@ -20,8 +21,11 @@ public class Myclass implements A{
      int x,y;
      public void meth1()
      {
-         x=10;
-         y=20;
+         Scanner sc=new Scanner(System.in);
+         System.out.println("Enter 2 numbers x and y");
+         x=sc.nextInt();
+         y=sc.nextInt();
+         
      }
      public void meth2()
      {
