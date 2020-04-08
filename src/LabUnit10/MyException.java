@@ -12,10 +12,10 @@ package LabUnit10;
 
 import java.util.*;
 
-class MyException extends Exception{
+public class MyException extends Exception{
     
 }
-public class TryCatchExample {
+class TryCatchExample {
     int flag=0;
     public static void main(String args[])
     {
@@ -34,7 +34,7 @@ public class TryCatchExample {
             {
                 if(a[i]<0)
                 
-                    System.out.println("Negtive Array Elements");
+                    System.out.println("Array Elements cannot be negative");
                 
                 
             }
