@@ -21,7 +21,7 @@ public class CreateTextFile {
         try
         {
         
-        File f=new File("c:\\java\\Apple.txt");
+        File f=new File("c:\\java\\abc.txt");
           
             result = f.createNewFile();  
             if(result)     
