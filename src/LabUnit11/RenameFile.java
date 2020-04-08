@@ -10,7 +10,7 @@ package LabUnit11;
  * @author Me
  */
 import java.io.File;
-import java.io.FileWriter;
+//import java.io.FileWriter;
 import java.io.IOException;  
 //import java.util.*;
 public class RenameFile {
@@ -31,8 +31,11 @@ public class RenameFile {
                 boolean b=f.renameTo(f2);
                 if(b)
                     System.out.println("Renamed Successfully:)");
+                    
                 else
                     System.out.println("Error!!There is already a File with the same name:(");
+                f2.delete();
+                System.out.println("File Deleted");
                 
             }  
             else  
@@ -45,6 +48,8 @@ public class RenameFile {
                     System.out.println("Renamed Successfully:)");
                 else
                     System.out.println("Error!!There is already a File with the same name:(");
+                f2.delete();
+                System.out.println("File Deleted");
             } 
             
         }   
