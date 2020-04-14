@@ -11,7 +11,22 @@ package LabUnit9;
  */
 //import java.util.*;
 
-public class Automatic {
+class Base
+{
+    void conversion1(int b)
+    {
+        System.out.println("b="+b);
+    }
+    void conversion1(float c,int b)
+    {
+        System.out.println("c="+c+"b="+b);
+    }
+    void conversion1(double f,int b,float c)
+    {
+        System.out.println("f="+f+"b="+b+"c="+c);
+    }
+}
+public class Automatic extends Base {
     void conversion1(int b)
     {
         System.out.println("b="+b);
